@@ -20,6 +20,13 @@ Currently all it does is it stops and masks the `fprintd` service so that a fing
 
 4. Connect a (Lenovo) dock and try it out, if it does not work, restart the laptop and try again. `udev` reload does not always work.
 
+## Debugging
+
+Logs can be found using:
+```Bash
+sudo journalctl -xef | grep -E 'dock|fprintd)'
+```
+
 ## Sources
 [This opensource.com article on udev](https://opensource.com/article/18/11/udev)
 
