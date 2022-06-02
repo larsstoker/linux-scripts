@@ -1,0 +1,2 @@
+SUBSYSTEM=="hid", ACTION=="add", ENV{HID_NAME}=="Lenovo ThinkPad USB-C Dock Audio", RUN+="/usr/local/bin/dock-connection.sh add"
+SUBSYSTEM=="hid", ACTION=="remove", ENV{HID_NAME}=="Lenovo ThinkPad USB-C Dock Audio", RUN+="/usr/local/bin/dock-connection.sh remove"
