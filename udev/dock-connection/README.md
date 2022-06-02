@@ -19,3 +19,8 @@ Currently all it does is it stops and masks the `fprintd` service so that a fing
     ```
 
 4. Connect a (Lenovo) dock and try it out, if it does not work, restart the laptop and try again. `udev` reload does not always work.
+
+## Sources
+[This opensource.com article on udev](https://opensource.com/article/18/11/udev)
+
+[This Stack Exchange thread in particular on how to disable fprintd](https://unix.stackexchange.com/questions/678609/how-to-disable-fingerprint-authentication-when-laptop-lid-is-closed)
