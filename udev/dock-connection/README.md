@@ -8,7 +8,7 @@ Currently all it does is it stops and masks the `fprintd` service so that a fing
 
 ## How to use
 
-1. Create a new file: `/etc/udev/rules.d/80-local.rules` and copy the contents of [80-local.rules](80-local.rules) to it.
+1. Create a new file: `/etc/udev/rules.d/80-local.rules` and copy the contents of [80-local.rules](../80-local.rules) to it.
 
 2. Create the actual script: `/usr/local/bin/dock-connection.sh` and copy the contents of [dock-connection.sh](dock-connection.sh) to it.
 
