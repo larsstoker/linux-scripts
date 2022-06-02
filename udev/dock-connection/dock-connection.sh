@@ -9,14 +9,14 @@ if [[ "$ACTION" =~ "add" ]]
     touch "$LOCK"
     systemctl stop fprintd
     systemctl mask fprintd
-    logger -s "stopped and disabled fprintd"
+    logger -s "stopped and masked fprintd"
 elif [[ "$ACTION" =~ "remove" ]]
   then
     logger -s "docking station disconnected"
     systemctl unmask fprintd
     systemctl start fprint
     rm "$LOCK"
-    logger -s "started and enabled fprintd"
+    logger -s "started and masked fprintd"
 fi
 
 exit 0
